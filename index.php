@@ -10,7 +10,7 @@
 
 <body>
   <?php include 'header.php'; ?>
-  <div class="container-fluid">
+  <div class="container">
     <div class="col s12">
       <h4 style="text-align:center;">แบบสำรวจความพึงพอใจที่มีต่อการใช้บริการ IT Outsource</h4>
       <h4 style="text-align:center;">INET ขอขอบคุณสำหรับความไว้วางใจจากท่านที่ให้ INET ได้เป็นส่วนหนึ่งในการขับเคลื่อนธุรกิจของท่าน</h4><br />
@@ -27,57 +27,74 @@
           </div>
 
           <div class="card-body">
-            <div class="col-sm-6">
+            <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 160px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อบริษัท</span>
+                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อบริษัท</span>
                 </div>
                 <input type="text" class="form-control" id="company_name" name="company_name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 160px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อผู้ให้ข้อมูล</span>
+                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อผู้ให้ข้อมูล</span>
                 </div>
                 <input type="text" class="form-control" id="customer_name" name="customer_name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 160px;" class="input-group-text" id="inputGroup-sizing-default">ตำแหน่ง</span>
+                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">ตำแหน่ง</span>
                 </div>
                 <input type="text" class="form-control" id="customer_position" name="customer_position" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 160px;" class="input-group-text" id="inputGroup-sizing-default">โทรศัพท์</span>
+                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">โทรศัพท์</span>
                 </div>
-                <input type="tel" class="form-control" id="customer_telephone" name="customer_telephone" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="xxxxxxxxxx" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง" required>
+                <input type="tel" class="form-control" id="customer_telephone" name="customer_telephone" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="xxxxxxxxxx" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10" title="กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง" required>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 160px;" class="input-group-text" id="inputGroup-sizing-default">อีเมล</span>
+                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">อีเมล</span>
                 </div>
                 <input class="form-control" id="customer_email" name="customer_email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="example@example.com" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" title="กรุณาตรวจสอบรูปแบบ E-mail" required />
               </div>
             </div>
 
             <!-- Start Checkbox -->
-            <div class="col-sm-6">
-              <div class="input-group mx-sm-5 mb-3">
+            <div class="col-xs-12 col-md-5">
+              <div class="mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 160px;" class="input-group-text" id="inputGroup-sizing-default">Service</span>
+                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">Service</span>
                 </div>                
                   <div class="col">
                     <div class="grid-container" title="กรุณาเลือก Service ของท่าน" >
                         <div class="grid-item">
-                          <h6>Consult</h6><br><br>
+                          <h6><b>OS Mobile</b></h6>
+                          <p><input type="checkbox" name ="customer_service[]" id="s5_c1" value="IOS"> IOS</p>
+                          <p><input type="checkbox" name ="customer_service[]" id="s5_c2" value="Android"> Android</p>
+                        </div>
+                        <div class="grid-item">
+                          <h6><b>UX/UI</b></h6>
+                            <p><input type="checkbox" name ="customer_service[]" id="s2_c1" value="Frontend"> Frontend</p>
+                            <p><input type="checkbox" name ="customer_service[]" id="s2_c2" value="React"> React</p>
+                            <p><input type="checkbox" name ="customer_service[]" id="s2_c3" value="Web Site"> Web Site</p>
+                        </div>
+                        <div class="grid-item">
+                          <h6><b>Support</b></h6>
+                            <p><input type="checkbox" name ="customer_service[]" id="s3_c1" value="IT Support"> IT Support</p>
+                            <p><input type="checkbox" name ="customer_service[]" id="s3_c2" value="Business Development"> Business Development</p>
+                            <p><input type="checkbox" name ="customer_service[]" id="s3_c3" value="Digital Marketing"> Digital Marketing</p>
+                        </div>
+                        <div class="grid-item">
+                          <h6><b>Consult</b></h6>
                             <p><input type="checkbox" name ="customer_service[]" id="s1_c1" value="Consult"> Consult</p>
                             <p><input type="checkbox" name ="customer_service[]" id="s1_c2" value="PM"> PM</p>
                             <p><input type="checkbox" name ="customer_service[]" id="s1_c3" value="BA"> BA</p>
@@ -86,19 +103,7 @@
                             <p><input type="checkbox" name ="customer_service[]" id="s1_c6" value="Tester"> Tester</p>
                         </div>
                         <div class="grid-item">
-                          <h6>UX/UI</h6><br><br>
-                            <p><input type="checkbox" name ="customer_service[]" id="s2_c1" value="Frontend"> Frontend</p>
-                            <p><input type="checkbox" name ="customer_service[]" id="s2_c2" value="React"> React</p>
-                            <p><input type="checkbox" name ="customer_service[]" id="s2_c3" value="Web Site"> Web Site</p>
-                        </div>
-                        <div class="grid-item">
-                          <h6>Support</h6><br><br>
-                            <p><input type="checkbox" name ="customer_service[]" id="s3_c1" value="IT Support"> IT Support</p>
-                            <p><input type="checkbox" name ="customer_service[]" id="s3_c2" value="Business Development"> Business Development</p>
-                            <p><input type="checkbox" name ="customer_service[]" id="s3_c3" value="Digital Marketing"> Digital Marketing</p>
-                        </div>
-                        <div class="grid-item">
-                          <h6>Backend</h6><br><br>
+                          <h6><b>Backend</b></h6>
                             <p><input type="checkbox" name ="customer_service[]" id="s4_c1" value="C#"> C#</p>
                             <p><input type="checkbox" name ="customer_service[]" id="s4_c2" value="PHP"> PHP</p>
                             <p><input type="checkbox" name ="customer_service[]" id="s4_c3" value="Python"> Python</p>
@@ -109,15 +114,13 @@
                             <p><input type="checkbox" name ="customer_service[]" id="s4_c8" value="API"> API</p>
                         </div>
                         <div class="grid-item">
-                          <h6>OS Mobile</h6><br><br>
-                          <p><input type="checkbox" name ="customer_service[]" id="s5_c1" value="IOS"> IOS</p>
-                          <p><input type="checkbox" name ="customer_service[]" id="s5_c2" value="Android"> Android</p>
+                            <h6><b>Network</b></h6>
+                          <p><input type="checkbox" name ="customer_service[]"id="s6_c1" value="Implement Network"> Implement Network</p>
                         </div>
                         <div class="grid-item">
-                            <h6>Network</h6><br><br>
-                          <p><input type="checkbox" name ="customer_service[]"id="s6_c1" value="Implement Network"> Implement Network</p>
-                          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                          <p><input type="checkbox" name ="customer_service[]"id="s7" value="อื่นๆ"> <b>อื่นๆ โปรดระบุบด้านล่าง</b></p>
+                        <div class="input-group mb-3">
+                           <p><input type="checkbox" name ="customer_service[]"id="s7" value="อื่นๆ"> <b><u>อื่นๆ โปรดระบุบด้านล่าง</u></b></p>  
+                           
                         </div>
                       </div>
                     </div>
@@ -125,19 +128,19 @@
                 </div>
 
             <!-- End Checkbox -->
-              <div class="col-sm-6">
+              <div class="col-sm-10">
                 <div class="input-group mx-sm-5 mb-3">
                   <div class="input-group-prepend">
-                    <span style="width: 160px;" class="input-group-text" id="inputGroup-sizing-default">Service อื่นๆ</span>
+                    <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">Service อื่นๆ</span>
                   </div>
                   <input type="text" class="form-control" id="customer_service_a" name="customer_service_a" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
                 </div>
               </div>
 
-              <div class="col-sm-6">
+              <div class="col-sm-10">
                 <div class="input-group mx-sm-5 mb-3">
                   <div class="input-group-prepend">
-                    <span style="width: 160px;" class="input-group-text" id="inputGroup-sizing-default">Project ที่มอบหมาย</span>
+                    <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default"> งานที่มอบหมาย</span>
                   </div>
                   <input type="text" class="form-control" id="customer_project" name="customer_project" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
                 </div>
@@ -154,7 +157,7 @@
 
           <!-- Q1. -->
           <div class="card-body">
-            <h5>1. ด้านบุคลากรที่ให้บริการ Outsource </h5><br/>
+            <h5>1.ด้านบุคลากรที่ให้บริการOutsource </h5></br>
             <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
@@ -213,7 +216,7 @@
           <!-- End Q1. -->
           <!-- Q2. -->
           <div class="card-body">
-            <h5>2. ด้านผู้ดูแลบุคลากร Outsource (Supervisor)</h5><br />
+            <h5>2.ด้านผู้ดูแลบุคลากรOutsource (Supervisor)</h5></br>
 
             <table class="table table-bordered table-responsive">
               <thead class="thead-light">
@@ -275,7 +278,7 @@
 
           <!-- Q3. -->
           <div class="card-body">
-            <h5>3. ด้านคุณภาพการให้บริการ</h5><br />
+            <h5>3.ด้านคุณภาพการให้บริการ</h5></br>
 
             <table class="table table-bordered table-responsive">
               <thead class="thead-light">
@@ -334,7 +337,7 @@
 
           <div class="card-body">
             <label class="container">
-              <textarea class="form-control" name="q4_comment" id="q4_comment" style="width:80%; height:50%;"></textarea>
+              <textarea class="form-control" name="q4_comment" id="q4_comment" style="width:100%; height:70%;"></textarea>
             </label>
           </div>
           <!-- End Comment. -->

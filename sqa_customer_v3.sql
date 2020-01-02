@@ -36,7 +36,7 @@ CREATE TABLE `answers` (
   `customer_position` varchar(30) NOT NULL,
   `customer_telephone` varchar(10) NOT NULL,
   `customer_email` varchar(30) NOT NULL,
-  `customer_service` varchar(300) NOT NULL,
+  `customer_service` varchar(500) NOT NULL,
   `customer_service_a` varchar(30) NOT NULL,
   `customer_project` varchar(30) NOT NULL, 
 
@@ -54,7 +54,7 @@ CREATE TABLE `answers` (
   `q3_2` int(11) NOT NULL,
   `q3_3` int(11) NOT NULL,
   `q3_4` int(11) NOT NULL,
-  `suggestions_detail` varchar(300) NOT NULL
+  `suggestions_detail` varchar(500) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
