@@ -12,8 +12,8 @@
   <?php include 'header.php'; ?>
   <div class="container">
     <div class="col s12">
-      <h4 style="text-align:center;">แบบสำรวจความพึงพอใจที่มีต่อการใช้บริการ IT Outsource</h4>
-      <h4 style="text-align:center;">INET ขอขอบคุณสำหรับความไว้วางใจจากท่านที่ให้ INET ได้เป็นส่วนหนึ่งในการขับเคลื่อนธุรกิจของท่าน</h4><br />
+      <h5 style="text-align:center;">แบบสำรวจความพึงพอใจที่มีต่อการใช้บริการ IT Outsource</h5>
+      <h5 style="text-align:center;">INET ขอขอบคุณสำหรับความไว้วางใจจากท่านที่ให้ INET ได้เป็นส่วนหนึ่งในการขับเคลื่อนธุรกิจของท่าน</h5><br />
       <div class="card">
 
         <!-- Start Form -->
@@ -23,7 +23,7 @@
 
           <!-- Detial. -->
           <div class="card-header">
-            <h5>รายละเอียดผู้ให้ข้อมูล <span class="required" style="color:red;">*</span></h5>
+            <h6>รายละเอียดผู้ให้ข้อมูล <span class="required" style="color:red;">*</span></h6>
           </div>
 
           <div class="card-body">
@@ -118,16 +118,22 @@
                           <p><input type="checkbox" name ="customer_service[]"id="s6_c1" value="Implement Network"> Implement Network</p>
                         </div>
                         <div class="grid-item">
+                        </div>
+                        <div class="grid-item">
+                        </div>
+                        <div class="grid-item">
+                        
                         <div class="input-group mb-3">
                            <p><input type="checkbox" name ="customer_service[]"id="s7" value="อื่นๆ"> <b><u>อื่นๆ โปรดระบุบด้านล่าง</u></b></p>  
-                           
                         </div>
                       </div>
                     </div>
                   </div>             
                 </div>
+              </div>
 
             <!-- End Checkbox -->
+            
               <div class="col-sm-10">
                 <div class="input-group mx-sm-5 mb-3">
                   <div class="input-group-prepend">
@@ -147,17 +153,18 @@
               </div>
             </div>
           </div>
+        
           <!-- End detial. -->
           <!-- Description  -->
           <div class="card-header">
-            <h5>โปรดเลือกคำตอบที่ตรงกับระดับความพึงพอใจของท่าน พร้อมให้ข้อเสนอแนะ เพื่อบริษัท อินเทอร์เน็ตประเทศไทย จำกัด (มหาชน)</h5>
-            <h5>จะนำไปปรับปรุงการบริการให้ดียิ่งขึ้น โดยท่านจะใช้เวลาราว 3-5 นาที ในการทำแบบสำรวจความพึงพอใจนี้</h5>
+            <h6>โปรดเลือกคำตอบที่ตรงกับระดับความพึงพอใจของท่าน พร้อมให้ข้อเสนอแนะ เพื่อบริษัท อินเทอร์เน็ตประเทศไทย จำกัด (มหาชน)</h6>
+            <h6>จะนำไปปรับปรุงการบริการให้ดียิ่งขึ้น โดยท่านจะใช้เวลาราว 3-5 นาที ในการทำแบบสำรวจความพึงพอใจนี้</h6>
           </div>
           <!-- End Description  -->
 
           <!-- Q1. -->
           <div class="card-body">
-            <h5>1.ด้านบุคลากรที่ให้บริการOutsource </h5></br>
+            <h6><b>1. ด้านบุคลากรที่ให้บริการ Outsource</b></h6></br>
             <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
@@ -216,7 +223,7 @@
           <!-- End Q1. -->
           <!-- Q2. -->
           <div class="card-body">
-            <h5>2.ด้านผู้ดูแลบุคลากรOutsource (Supervisor)</h5></br>
+            <h6><b>2. ด้านผู้ดูแลบุคลากร Outsource (Supervisor)</b></h6></br>
 
             <table class="table table-bordered table-responsive">
               <thead class="thead-light">
@@ -278,7 +285,7 @@
 
           <!-- Q3. -->
           <div class="card-body">
-            <h5>3.ด้านคุณภาพการให้บริการ</h5></br>
+            <h6><b>3. ด้านคุณภาพการให้บริการ</b></h6></br>
 
             <table class="table table-bordered table-responsive">
               <thead class="thead-light">
@@ -332,7 +339,7 @@
 
           <!-- Comment. -->
           <div class="card-header">
-            <h5>ข้อเสนอแนะ ข้อคิดเห็นเพิ่มเติม</h5>
+            <h6>ข้อเสนอแนะ ข้อคิดเห็นเพิ่มเติม</h6>
           </div>
 
           <div class="card-body">

@@ -6,7 +6,9 @@
   <title>SQA Customer</title>
 
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,thai" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,thai" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap&subset=thai" rel="stylesheet">
+
 
   
   <!-- Bootstrap -->
@@ -26,7 +28,8 @@
   <style>
 
     body {
-      font-family: 'Kanit', sans-serif;
+      /* font-family: 'Kanit', sans-serif; */
+      font-family: 'Sarabun', sans-serif;
       background-color: #f3f3f4;
       text-align: justify;
     }
