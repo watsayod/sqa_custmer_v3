@@ -35,7 +35,7 @@ CREATE TABLE `answers` (
   `customer_name` varchar(50) NOT NULL,
   `customer_position` varchar(999) NOT NULL,
   `customer_telephone` varchar(10) NOT NULL,
-  `customer_email` varchar(50) NOT NULL,
+  `customer_email` varchar(100) NOT NULL,
   `customer_service` varchar(999) NOT NULL,
   `customer_service_a` varchar(5000) NOT NULL,
   `customer_project` varchar(5000) NOT NULL, 
