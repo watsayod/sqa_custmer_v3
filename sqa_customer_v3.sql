@@ -31,8 +31,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `answers` (
   `id` int(5) NOT NULL,
   `date_time` timestamp NOT NULL DEFAULT current_timestamp(),
-  `company_name` varchar(50) NOT NULL,
-  `customer_name` varchar(50) NOT NULL,
+  `company_name` varchar(100) NOT NULL,
+  `customer_name` varchar(100) NOT NULL,
   `customer_position` varchar(999) NOT NULL,
   `customer_telephone` varchar(10) NOT NULL,
   `customer_email` varchar(100) NOT NULL,
