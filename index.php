@@ -30,7 +30,7 @@
             <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อบริษัท</span>
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อบริษัท</span>
                 </div>
                 <input type="text" class="form-control" id="company_name" name="company_name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
               </div>
@@ -38,7 +38,7 @@
             <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อผู้ให้ข้อมูล</span>
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อผู้ให้ข้อมูล</span>
                 </div>
                 <input type="text" class="form-control" id="customer_name" name="customer_name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
               </div>
@@ -46,7 +46,7 @@
             <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">ตำแหน่ง</span>
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">ตำแหน่ง</span>
                 </div>
                 <input type="text" class="form-control" id="customer_position" name="customer_position" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
               </div>
@@ -54,7 +54,7 @@
             <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">โทรศัพท์</span>
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">โทรศัพท์</span>
                 </div>
                 <input type="tel" class="form-control" id="customer_telephone" name="customer_telephone" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="xxxxxxxxxx" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10" title="กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง" required>
               </div>
@@ -62,9 +62,17 @@
             <div class="col-sm-10">
               <div class="input-group mx-sm-5 mb-3">
                 <div class="input-group-prepend">
-                  <span style="width: 105px;" class="input-group-text" id="inputGroup-sizing-default">อีเมล</span>
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">อีเมล</span>
                 </div>
                 <input class="form-control" id="customer_email" name="customer_email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="example@example.com" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" title="กรุณาตรวจสอบรูปแบบ E-mail" required />
+              </div>
+            </div>
+            <div class="col-sm-10">
+              <div class="input-group mx-sm-5 mb-3">
+                <div class="input-group-prepend">
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อผู้ปฏิบัติงาน</span>
+                </div>
+                <input type="text" class="form-control" id="customer_employee" name="customer_employee" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
               </div>
             </div>
 

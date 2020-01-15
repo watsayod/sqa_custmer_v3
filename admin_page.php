@@ -49,6 +49,7 @@ include('configdb.php');
         <td>ตำแหน่ง</td>
         <td>โทรศัพท์</td>
         <td>อีเมล</td>
+        <td>ชื่อผู้ปฏิบัติงาน</td>
         <td>Service</td>
         <td>Service อื่นๆ</td>
         <td>Project ที่มอบหมาย</td>
@@ -80,6 +81,7 @@ include('configdb.php');
         echo "<td>" . $row["customer_position"] .  "</td> ";
         echo "<td>" . $row["customer_telephone"] .  "</td> ";
         echo "<td>" . $row["customer_email"] .  "</td> ";
+        echo "<td>" . $row["customer_employee"] .  "</td> ";
         echo "<td>" . $row["customer_service"] . "</td> ";
         echo "<td>" . $row["customer_service_a"] . "</td> ";
         echo "<td>" . $row["customer_project"] . "</td> ";
