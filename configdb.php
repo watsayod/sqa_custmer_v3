@@ -5,7 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "sqa_customer_v3";
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
+$conn = new mysqli($servername, $username, $password, $dbname);
 mysqli_set_charset($conn, "utf8");
 
 // Check connection

@@ -24,6 +24,7 @@ echo '  <tr>
             <td>เบอร์โทรศัพท์</td>
             <td>Email</td>
             <td>ชื่อผู้ปฏิบัติการ</td>
+            <td>ประเภท Service</td>
             <td>Service</td>
             <td>Serviceอื่นๆ</td>
             <td>Project ที่มอบหมาย</td>
@@ -53,6 +54,7 @@ while ($row = $res->fetch_array()) {
                 <td>' . $row['customer_telephone'] . '</td>
                 <td>' . $row['customer_email'] . '</td>
                 <td>' . $row['customer_employee'] . '</td>
+                <td>' . $row["customer_service_cat"] . '</td>
                 <td>' . $row['customer_service'] . '</td>
                 <td>' . $row['customer_service_a'] . '</td>
                 <td>' . $row['customer_project'] . '</td>
