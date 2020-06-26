@@ -100,6 +100,8 @@
                             <p><input type="checkbox" name ="customer_service[]" id="s3_c1" value="IT Support"> IT Support</p>
                             <p><input type="checkbox" name ="customer_service[]" id="s3_c2" value="Business Development"> Business Development</p>
                             <p><input type="checkbox" name ="customer_service[]" id="s3_c3" value="Digital Marketing"> Digital Marketing</p>
+                            <p><input type="checkbox" name="customer_service[]" id="s3_c4" value="System Administrator"> System Administrator</p>
+                            <p><input type="checkbox" name="customer_service[]" id="s3_c5" value="Sale Coordinator"> Sale Coordinator</p>
                         </div>
                         <div class="grid-item">
                           <h6><b>Consult</b></h6>
@@ -132,7 +134,7 @@
                         <div class="grid-item">
                         
                         <div class="input-group mb-3">
-                           <p><input type="checkbox" name ="customer_service[]"id="s7" value="อื่นๆ"> <b><u>อื่นๆ โปรดระบุบด้านล่าง</u></b></p>  
+                           <p><input type="checkbox" name ="customer_service[]"id="s7" value="อื่นๆ"> <b><u>อื่นๆ โปรดระบุด้านล่าง</u></b></p>  
                         </div>
                       </div>
                     </div>
@@ -147,11 +149,11 @@
                   <div class="input-group-prepend">
                     <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">Service อื่นๆ</span>
                   </div>
-                  <input type="text" class="form-control" id="customer_service_a" name="customer_service_a" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
+                  <input type="text" class="form-control" id="customer_service_a" name="customer_service_a" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" autocomplete="off" >
                 </div>
               </div>
-
               <div class="col-sm-10">
+
                 <div class="input-group mx-sm-5 mb-3">
                   <div class="input-group-prepend">
                     <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default"> งานที่มอบหมาย</span>
@@ -417,7 +419,25 @@
       });
 
     });
+      
+      $('#customer_service_a').tokenfield({
+          autocomplete :{
+              source: function(request, response)
+              {
+                  jQuery.get('fetch.php', {
+                      query : request.term
+                  }, function(data){
+                      data = JSON.parse(data);
+                      response(data);
+                  });
+              },
+              delay: 100
+          }
+      });
+
   </script>
+
+
   <!-- end script submit -->
 
 </body>
