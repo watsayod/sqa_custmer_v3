@@ -1,25 +1,22 @@
-<?php
-
+<?php 
 //fetch.php;
 
-$service_data = array();
+if(isset($_GET["query"])) {
 
-if(isset($_GET["query"]))
-{
-	$connect = new PDO("mysql:host=localhost;  dbname=sqa_customer_v3; charset=utf8", "root", "");
-
-	$query = "SELECT service_name FROM service WHERE service_name LIKE '".$_GET["query"]."%' ORDER BY service_name ASC LIMIT 15";
-
-	$statement = $connect->prepare($query);
-
+	include 'configdb.php';
+	
+	$statement = $conn->prepare("SELECT service_name FROM service WHERE service_name LIKE ? ORDER BY service_name ASC LIMIT 15");
+	$statement->bind_param("s", $search);
+	$search = $_GET["query"].'%';
 	$statement->execute();
+	$arr = $statement->get_result();
+	$service_data = array();
 
-	while($row = $statement->fetch(PDO::FETCH_ASSOC))
-	{
-
-	$service_data[] = $row["service_name"];
-
-	}
+	while($row = $arr->fetch_assoc()){
+		$service_data[] = $row["service_name"];
+    }
+    
+    $conn->close();
 }
 
 echo json_encode($service_data);
