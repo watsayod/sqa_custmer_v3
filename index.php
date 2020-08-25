@@ -421,6 +421,8 @@
     });
       
       $('#customer_service_a').tokenfield({
+          delimiter : ['|', ','],
+          showAutocompleteOnFocus: true,
           autocomplete :{
               source: function(request, response)
               {
